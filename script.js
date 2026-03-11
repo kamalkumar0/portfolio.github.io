@@ -1,7 +1,4 @@
-/* =============================================
-   KAMAL KUMAR — PORTFOLIO v3
-   JavaScript: Cursor, Hero Canvas, Profile Sparks, Animations
-============================================= */
+
 
 // ── CUSTOM CURSOR ──
 const cursor      = document.getElementById('cursor');
@@ -58,7 +55,7 @@ function drawHeroGrid() {
       const pulse = Math.sin((x + y + animFrame * 0.45) * 0.018) * 0.5 + 0.5;
       hCtx.beginPath();
       hCtx.arc(x, y, 1.4, 0, Math.PI * 2);
-      hCtx.fillStyle = `rgba(59,130,246,${0.07 + pulse * 0.18})`;
+      hCtx.fillStyle = `rgba(37,99,235,${0.12 + pulse * 0.22})`;
       hCtx.fill();
     }
   }
@@ -66,9 +63,9 @@ function drawHeroGrid() {
   // Scan line
   const scanY = ((animFrame * 0.7) % (H + 80)) - 40;
   const sg = hCtx.createLinearGradient(0, scanY - 40, 0, scanY + 40);
-  sg.addColorStop(0, 'rgba(59,130,246,0)');
-  sg.addColorStop(0.5, 'rgba(59,130,246,0.06)');
-  sg.addColorStop(1, 'rgba(59,130,246,0)');
+  sg.addColorStop(0, 'rgba(37,99,235,0)');
+  sg.addColorStop(0.5, 'rgba(37,99,235,0.05)');
+  sg.addColorStop(1, 'rgba(37,99,235,0)');
   hCtx.fillStyle = sg;
   hCtx.fillRect(0, scanY - 40, W, 80);
 
@@ -79,7 +76,7 @@ function drawHeroGrid() {
     if (p.y < 0 || p.y > 1) p.vy *= -1;
     hCtx.beginPath();
     hCtx.arc(p.x * W, p.y * H, p.r, 0, Math.PI * 2);
-    hCtx.fillStyle = `rgba(96,165,250,${p.a})`;
+    hCtx.fillStyle = `rgba(37,99,235,${p.a * 0.5})`;
     hCtx.fill();
   });
 
@@ -93,7 +90,7 @@ function drawHeroGrid() {
         hCtx.beginPath();
         hCtx.moveTo(heroParticles[i].x * W, heroParticles[i].y * H);
         hCtx.lineTo(heroParticles[j].x * W, heroParticles[j].y * H);
-        hCtx.strokeStyle = `rgba(59,130,246,${0.06 * (1 - d / 130)})`;
+        hCtx.strokeStyle = `rgba(37,99,235,${0.08 * (1 - d / 130)})`;
         hCtx.lineWidth = 0.5;
         hCtx.stroke();
       }
