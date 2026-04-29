@@ -151,7 +151,7 @@ img { max-width: 100%; display: block; }
 
 /* ── SECTIONS ── */
 section { padding: 6rem 0; }
-.section-label { font-family: var(--font-mono); font-size: 1.2rem; color: var(--blue); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.1rem; font-weight: 500; }
+.section-label { font-family: var(--font-mono); font-size: 0.7rem; color: var(--blue); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.1rem; font-weight: 500; }
 .section-heading { font-family: var(--font-head); font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.04em; margin-bottom: 3rem; color: var(--text); }
 .section-heading em { font-style: normal; color: var(--blue); }
 
@@ -322,8 +322,8 @@ footer p { font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted
   .skills-grid { grid-template-columns: 1fr; }
   .hero-badges { gap: 0.5rem; }
   .badge { font-size: 0.66rem; padding: 0.28rem 0.7rem; }
-  .hero-ctas { flex-direction: column; }
-  .btn-primary, .btn-ghost { text-align: center; width: 100%; }
+  .hero-ctas { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-ghost, .btn-resume { text-align: center; justify-content: center; width: 100%; max-width: 320px; }
   .social-links { flex-direction: column; align-items: center; }
   .social-link { width: 85%; justify-content: center; }
   .profile-wrapper { width: 240px; height: 240px; }
