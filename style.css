@@ -151,7 +151,7 @@ img { max-width: 100%; display: block; }
 
 /* ── SECTIONS ── */
 section { padding: 6rem 0; }
-.section-label { font-family: var(--font-mono); font-size: 1.0rem; color: var(--blue); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.1rem; font-weight: 500; }
+.section-label { font-family: var(--font-mono); font-size: 1.2rem; color: var(--blue); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.1rem; font-weight: 500; }
 .section-heading { font-family: var(--font-head); font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.04em; margin-bottom: 3rem; color: var(--text); }
 .section-heading em { font-style: normal; color: var(--blue); }
 
